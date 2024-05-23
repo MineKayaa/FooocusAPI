@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "7edbcbe0-32af-41fa-b560-c4945a498d20",
+		"name": "FooocusAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7849097"
+	},
+	"item": [
+		{
+			"name": "get-image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "img1",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "img2",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/model?prompt=woman having fun with her tea",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"model"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "woman having fun with her tea"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get-image",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "img1",
+									"type": "file",
+									"src": "/Users/macbook/Desktop/AI_984b4cd0-1945-4724-82ca-e708b8bd390e.jpg"
+								},
+								{
+									"key": "img2",
+									"type": "file",
+									"src": "/Users/macbook/Desktop/tea.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/model?prompt=woman having fun with her tea",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"model"
+							],
+							"query": [
+								{
+									"key": "prompt",
+									"value": "woman having fun with her tea"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 23 May 2024 14:52:27 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "126"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"https://replicate.delivery/pbxt/Xw4wiCqkhX5RANtwfKzlrImBXLEORJUJIlsJ7K0KKHfeRhulA/fb9e4e0e-712d-4eb2-a0c3-08b1884b5cfc.png\"\n]"
+				}
+			]
+		}
+	]
+}
